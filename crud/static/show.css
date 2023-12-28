@@ -1,0 +1,32 @@
+body{
+    background-color:rgb(152, 196, 236);
+}
+#head
+{
+    text-align: center;
+    max-width: 80%;
+    margin-left:9%;
+    padding:0.5%;
+    background-color:rgb(228, 156, 49);
+}
+
+table{
+    font-family:Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:95%;
+    margin: 20px;
+    margin-bottom:30px;
+
+}
+
+td,th{
+    border:2px solid rgb(245, 241, 241) ;
+    text-align: center;
+    padding: 8px;
+
+}
+
+tr:nth-child(even){
+    background-color: rgb(104, 189, 247);
+
+}

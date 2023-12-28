@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(152, 196, 236);
+}
+#divone
+{
+    background-color: azure;
+    max-width:fit-content;
+    padding:6%;
+    margin-left: 30%;
+    margin-top:10%;
+
+}
+
+#btn{
+    margin-left: 40%;
+    background-color: rgb(89, 162, 245);
+    /* size:10px; */
+
+}
+#divtwo{
+    margin-left:90%;
+    background-color: rgb(236, 234, 230);
+    text-align: center;
+    color: black;
+}
+#id{
+    margin-left: 5%;
+}

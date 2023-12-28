@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-divice-width, initial-scale-1.0">
+    <link rel="stylesheet" href="{% static 'edit.css'%}">
+    <title> Edit Page  </title>
+</head>
+
+<body>
+
+    <div >
+        <form action="/show">
+            <input type="submit" value="show Records">
+        </form>
+    </div>
+
+    <div id="divone" >
+        <form action="/recordedit" method="post">
+             {% csrf_token %}
+            <h3> Id <input required autofocus type="text" name="id"  id="id" value={{Id}}></h3>
+            <h3> Name <input required  type="text" name="Name" value={{Name}}></h3>
+            <h3> Surname <input required  type="text" name="Surname" value={{Surname}}></h3>
+            <h3> Age <input required  type="text" name="Age" value={{Age}}></h3>
+
+            
+            <input type="submit" id="btn" value="Edit Record">
+
+        </form>
+        <span>{{msg}}</span>
+</div>
+
+
+
+
+</body>
+</html>

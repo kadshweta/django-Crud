@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-divice-width, initial-scale-1.0">
+    <link rel="stylesheet" href="{% static 'hone.css'%}">
+    <title> CRUD OPRATION </title>
+</head>
+
+<body>
+
+    {{msg}}
+    <div id="divtwo">
+        <form action="/show">
+            <input type="submit" value="show Records">
+        </form>
+    </div>
+
+    <div id="divone" >
+        <form action="/send" method="post">
+             {% csrf_token %}
+            <h3> Id <input required autofocus type="text" name="id"  id="id"></h3>
+            <h3> Name <input required  type="text" name="Name"></h3>
+            <h3> Surname <input required  type="text" name="Surname"></h3>
+            <h3> Age <input required  type="text" name="Age"></h3>
+            
+            <input type="submit" id="btn">
+
+        </form>
+</div>
+
+
+
+
+</body>
+</html>
